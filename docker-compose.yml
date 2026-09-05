@@ -1,0 +1,37 @@
+services:
+  hermes:
+    build: .
+    container_name: hermes-agent
+    working_dir: /app
+    restart: unless-stopped
+    depends_on:
+      - nine-router
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    volumes:
+      # Data dan konfigurasi tersimpan di Windows agar aman saat migrasi
+      - ./config:/root/.hermes
+      - ./data:/app/data
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+  nine-router:
+    image: decolua/9router:latest
+    container_name: nine-router
+    restart: unless-stopped
+    ports:
+      # Port dashboard agar bisa dibuka lewat browser Windows: http://localhost:20128
+      - "20128:20128"
+    volumes:
+      # Data akun dan provider 9Router tersimpan di Windows
+      - ./9router-data:/app/data
+    environment:
+      - DATA_DIR=/app/data
+      - PORT=20128
+      - HOSTNAME=0.0.0.0
+      - NODE_ENV=production
+      - INITIAL_PASSWORD=${INITIAL_PASSWORD}

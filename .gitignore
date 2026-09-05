@@ -1,0 +1,13 @@
+# Environment secrets & keys
+.env
+
+# Persistent & runtime data volumes
+data/
+9router-data/
+config/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
