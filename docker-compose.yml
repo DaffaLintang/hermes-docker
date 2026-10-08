@@ -17,7 +17,7 @@ services:
       - .env
     stdin_open: true
     tty: true
-    command: /bin/bash
+    command: hermes gateway run
 
   nine-router:
     image: decolua/9router:latest
