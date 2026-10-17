@@ -1,0 +1,21 @@
+services:
+  hermes:
+    build: .
+    container_name: hermes-standalone
+    working_dir: /app
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    volumes:
+      # Data dan konfigurasi tersimpan terpisah (bersih dan mandiri)
+      - ./config-standalone:/root/.hermes
+      - ./data-standalone:/app/data
+    env_file:
+      - .env.standalone
+    stdin_open: true
+    tty: true
+    # Mengizinkan akses ke host jika Anda menjalankan model/router lokal di Windows
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: hermes gateway run

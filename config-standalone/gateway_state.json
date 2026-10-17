@@ -1,0 +1,1 @@
+{"pid":1,"kind":"hermes-gateway","argv":["/usr/local/bin/hermes","gateway","run"],"start_time":25895,"gateway_state":"running","exit_reason":null,"restart_requested":false,"active_agents":0,"platforms":{},"updated_at":"2026-10-09T03:04:25.614677+00:00"}

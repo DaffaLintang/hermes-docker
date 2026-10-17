@@ -1,0 +1,4 @@
+{"ts": "2026-10-09T02:58:41.660756+00:00", "tag": "gateway.start", "pid": 1, "python": "3.11.16", "platform": "linux", "replace": false, "argv": ["/usr/local/bin/hermes", "gateway", "run"], "stdin_is_tty": true, "absorb_windows_console_controls": false}
+{"ts": "2026-10-09T03:04:25.767386+00:00", "tag": "asyncio.run.returned", "pid": 1, "python": "3.11.16", "platform": "linux", "success": false}
+{"ts": "2026-10-09T03:04:25.773706+00:00", "tag": "gateway.exit_nonzero", "pid": 1, "python": "3.11.16", "platform": "linux"}
+{"ts": "2026-10-09T03:04:25.783944+00:00", "tag": "atexit.hook", "pid": 1, "python": "3.11.16", "platform": "linux", "sys_exc": "(None, None, None)"}

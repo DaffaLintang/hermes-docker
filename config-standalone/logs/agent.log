@@ -1,0 +1,99 @@
+2026-10-09 02:58:41,208 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-10-09 02:58:41,211 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-10-09 02:58:41,215 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-10-09 02:58:41,420 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-10-09 02:58:41,421 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-10-09 02:58:41,422 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-10-09 02:58:41,424 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-10-09 02:58:41,425 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-10-09 02:58:41,426 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-10-09 02:58:41,426 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-10-09 02:58:41,428 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-10-09 02:58:41,459 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-10-09 02:58:41,460 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-10-09 02:58:41,461 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-10-09 02:58:41,466 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-10-09 02:58:41,468 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-10-09 02:58:41,470 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-10-09 02:58:41,475 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-10-09 02:58:41,478 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-10-09 02:58:41,481 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-10-09 02:58:41,484 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-10-09 02:58:41,486 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-10-09 02:58:41,517 INFO hermes_cli.plugins: Plugin discovery complete: 53 found, 46 enabled
+2026-10-09 02:58:41,725 WARNING hermes.security_audit: Security posture audit found 1 issue(s) — review your deployment:
+2026-10-09 02:58:41,725 WARNING hermes.security_audit:   [security 1/1] Running as ROOT. The agent's terminal/file tools execute with full root privileges — a single prompt-injection or exposed endpoint is a full host compromise. Run Hermes as an unprivileged user (or in a sandboxed terminal backend / container with a non-root user).
+2026-10-09 02:58:42,417 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-10-09 02:58:42,574 INFO gateway.run: Starting Hermes Gateway...
+2026-10-09 02:58:42,574 INFO gateway.run: Session storage: /root/.hermes/sessions
+2026-10-09 02:58:42,576 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-10-09 02:58:42,577 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-10-09 02:58:42,605 WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+2026-10-09 02:58:42,642 WARNING gateway.run: No messaging platforms enabled.
+2026-10-09 02:58:42,643 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-10-09 02:58:42,840 INFO gateway.run: Channel directory built: 0 target(s)
+2026-10-09 02:58:42,885 INFO gateway.run: Press Ctrl+C to stop
+2026-10-09 02:58:42,893 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-10-09 02:58:42,904 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-10-09 02:58:42,919 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/root/.hermes/kanban/.dispatcher.lock)
+2026-10-09 02:58:47,921 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-10-09 02:59:19,684 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-10-09 02:59:20,858 INFO tools.tirith_security: tirith installed to /root/.hermes/bin/tirith (SHA-256 only)
+2026-10-09 03:03:02,905 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-10-09 03:03:02,907 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-10-09 03:03:02,909 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-10-09 03:03:03,111 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-10-09 03:03:03,112 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-10-09 03:03:03,113 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-10-09 03:03:03,114 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-10-09 03:03:03,115 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-10-09 03:03:03,116 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-10-09 03:03:03,116 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-10-09 03:03:03,118 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-10-09 03:03:03,134 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-10-09 03:03:03,135 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-10-09 03:03:03,137 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-10-09 03:03:03,141 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-10-09 03:03:03,143 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-10-09 03:03:03,145 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-10-09 03:03:03,149 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-10-09 03:03:03,151 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-10-09 03:03:03,153 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-10-09 03:03:03,154 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-10-09 03:03:03,157 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-10-09 03:03:03,197 INFO hermes_cli.plugins: Plugin discovery complete: 53 found, 46 enabled
+2026-10-09 03:03:24,061 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-10-09 03:03:24,064 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-10-09 03:03:24,069 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-10-09 03:03:24,272 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-10-09 03:03:24,272 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-10-09 03:03:24,274 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-10-09 03:03:24,274 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-10-09 03:03:24,276 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-10-09 03:03:24,277 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-10-09 03:03:24,277 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-10-09 03:03:24,278 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-10-09 03:03:24,297 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-10-09 03:03:24,298 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-10-09 03:03:24,300 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-10-09 03:03:24,305 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-10-09 03:03:24,306 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-10-09 03:03:24,309 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-10-09 03:03:24,312 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-10-09 03:03:24,314 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-10-09 03:03:24,316 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-10-09 03:03:24,318 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-10-09 03:03:24,321 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-10-09 03:03:24,360 INFO hermes_cli.plugins: Plugin discovery complete: 53 found, 46 enabled
+2026-10-09 03:04:24,890 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-10-09 03:04:24,890 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.09 parent_cmdline='(unknown)'
+2026-10-09 03:04:24,911 INFO gateway.run: Stopping gateway...
+2026-10-09 03:04:24,920 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.01s
+2026-10-09 03:04:25,031 INFO gateway.run: Shutdown phase: drain done at +0.12s (drain took 0.11s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0)
+2026-10-09 03:04:25,032 INFO gateway.run: Shutdown phase: all adapters disconnected at +0.12s
+2026-10-09 03:04:25,452 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +0.54s
+2026-10-09 03:04:25,583 INFO gateway.run: Shutdown phase: SessionDB close done at +0.67s
+2026-10-09 03:04:25,603 INFO gateway.run: Gateway stopped by an unexpected signal — persisting gateway_state=running so container_boot auto-starts on the next boot (issue #42675)
+2026-10-09 03:04:25,656 INFO gateway.run: Gateway stopped (total teardown 0.75s)
+2026-10-09 03:04:25,659 INFO gateway.run: Gateway housekeeping stopped
+2026-10-09 03:04:25,759 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.

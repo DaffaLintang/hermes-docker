@@ -1,0 +1,24 @@
+2026-10-09 02:58:42,574 INFO gateway.run: Starting Hermes Gateway...
+2026-10-09 02:58:42,574 INFO gateway.run: Session storage: /root/.hermes/sessions
+2026-10-09 02:58:42,576 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-10-09 02:58:42,577 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-10-09 02:58:42,605 WARNING gateway.run: No env user allowlists configured. Messaging platforms default to pairing/allowlist policies and will deny unknown senders unless you configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id) or explicitly opt in with GATEWAY_ALLOW_ALL_USERS=true plus dm_policy/group_policy: open on the platform.
+2026-10-09 02:58:42,642 WARNING gateway.run: No messaging platforms enabled.
+2026-10-09 02:58:42,643 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-10-09 02:58:42,840 INFO gateway.run: Channel directory built: 0 target(s)
+2026-10-09 02:58:42,885 INFO gateway.run: Press Ctrl+C to stop
+2026-10-09 02:58:42,904 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-10-09 02:58:42,919 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/root/.hermes/kanban/.dispatcher.lock)
+2026-10-09 02:58:47,921 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-10-09 03:04:24,890 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-10-09 03:04:24,890 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.09 parent_cmdline='(unknown)'
+2026-10-09 03:04:24,911 INFO gateway.run: Stopping gateway...
+2026-10-09 03:04:24,920 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.01s
+2026-10-09 03:04:25,031 INFO gateway.run: Shutdown phase: drain done at +0.12s (drain took 0.11s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0)
+2026-10-09 03:04:25,032 INFO gateway.run: Shutdown phase: all adapters disconnected at +0.12s
+2026-10-09 03:04:25,452 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +0.54s
+2026-10-09 03:04:25,583 INFO gateway.run: Shutdown phase: SessionDB close done at +0.67s
+2026-10-09 03:04:25,603 INFO gateway.run: Gateway stopped by an unexpected signal — persisting gateway_state=running so container_boot auto-starts on the next boot (issue #42675)
+2026-10-09 03:04:25,656 INFO gateway.run: Gateway stopped (total teardown 0.75s)
+2026-10-09 03:04:25,659 INFO gateway.run: Gateway housekeeping stopped
+2026-10-09 03:04:25,759 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
